@@ -8,7 +8,7 @@ const Header = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          className="h-12 w-12 fill-yellow-400 mt-2"
+          className="h-12 w-12 fill-yellow-400 mt-2 animate-spin-slow"
         >
           <path
             d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 

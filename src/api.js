@@ -8,8 +8,9 @@ export const getWeatherCity = async (city) => {
     return response.data;
 }
 
+
 export const getForecastCity = async (city) => {
-    const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&aqi=no`);
+    const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=5&aqi=no&alerts=no`);
 
     return response.data;
 }
