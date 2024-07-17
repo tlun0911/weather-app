@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-200 min-h-lvh w-screen">
+    <div className="bg-slate-200 min-h-lvh w-screen overflow-x-hidden overscroll-x-none">
       <Header />
       <SearchBar onSearch={handleSearch} />
       <div className="grid grid-flow-row lg:grid-rows-1 mx-2 lg:grid-cols-12 mt-6 gap-y-2 gap-x-2">

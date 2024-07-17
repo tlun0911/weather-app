@@ -28,6 +28,7 @@ const Forecast = ({ forecast }) => {
                     <p className="text-lg">{day.day.condition.text}</p>
                     <p className="text-lg">High: {day.day.maxtemp_f} &deg;</p>
                     <p className="text-lg">Low: {day.day.mintemp_f} &deg;</p>
+                    <p className="text-lg">Chance of Rain: {day.day.daily_chance_of_rain} %</p>
                 </div>
             ))}
 
