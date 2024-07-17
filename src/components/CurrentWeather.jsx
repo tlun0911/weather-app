@@ -3,11 +3,11 @@ import React from "react";
 const CurrentWeather = ({ weather }) => {
   if (!weather) return null;
 
-//   const currentLocation = weather.location.name;
+  //   const currentLocation = weather.location.name;
 
-//   const refreshWeather = () => {
-//     handleSearch(currentLocation);
-//   };
+  //   const refreshWeather = () => {
+  //     handleSearch(currentLocation);
+  //   };
 
   return (
     <div
@@ -28,7 +28,11 @@ const CurrentWeather = ({ weather }) => {
               Feels Like: {weather.current.feelslike_f} &deg;
             </p>
             <p className="text-lg">Humidity: {weather.current.humidity} %</p>
-            <p className="text-lg">Wind: {weather.current.wind_mph}{" mph "}{weather.current.wind_dir}</p>
+            <p className="text-lg">
+              Wind: {weather.current.wind_mph}
+              {" mph "}
+              {weather.current.wind_dir}
+            </p>
             <p className="text-lg">UV Index: {weather.current.uv}</p>
           </div>
           <div className="flex flex-col justify-center items-center">
@@ -41,7 +45,10 @@ const CurrentWeather = ({ weather }) => {
             <p className="text-lg">{weather.current.condition.text}</p>
           </div>
         </div>
-        
+      </div>
+      <div className="flex flex-col items-center justify-center mt-4">
+        <p className="text-lg">Last Updated: {weather.current.last_updated}</p>
+        <p className="text-lg">Local Time: {weather.location.localtime}</p>
       </div>
     </div>
   );
